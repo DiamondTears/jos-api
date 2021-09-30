@@ -1,0 +1,22 @@
+{
+    "name": "wf/jos-api",
+    "description": "jd jos api development package",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Wf\\JosApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DiamondTears",
+            "email": "411328093@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6.*",
+        "guzzlehttp/guzzle": "~7.3.0"
+    }
+}
