@@ -9,11 +9,12 @@ class JdBase
     protected $apiParams;
     protected $publicParams;
 
-    public function __construct($method, $apiParams)
+    public function __construct($method, $publicParams,$apiParams)
     {
         $this->httpRequest = new Http();
         $this->sign = new Sign();
         $this->method = $method;
+        $this->publicParams=$publicParams;
         $this->apiParams = $apiParams;
     }
 
@@ -54,7 +55,6 @@ class JdBase
 
     /**
      * @describe 获取请求参数
-     * @return array
      * @author wf
      * @date 2021-09-30 13:16
      */
