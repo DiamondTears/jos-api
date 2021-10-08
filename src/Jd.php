@@ -22,6 +22,7 @@ class Jd extends JdBase
         $sign = $this->sign->JdSign($p, $this->publicParams['app_secret']);
         // 签名加入参数
         $p['sign'] = $sign;
+
         // 获取接口数据
         return $this->httpRequest->HttpGet($this->publicParams['url'], $this->publicParams['uri'], $p);
     }
