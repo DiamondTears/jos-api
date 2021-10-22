@@ -44,7 +44,7 @@ class Http
     }
 
     /**
-     * @describe http post
+     * @describe http post 暂时不使用
      * @param
      * @return
      * @author wf
