@@ -37,7 +37,7 @@ class Http
             $contents = $body->getContents();
             $data = $contents;
             $code = $res->getStatusCode();
-            return $data;
+            return json_decode($data,true);
         } catch (\Exception $e) {
             return $e->getMessage();
         }
